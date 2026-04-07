@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroQuiz Pro - Captain's Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu" class="screen active">
+            <h1>✈️ AeroQuiz</h1>
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Search Code or Name..." onkeyup="searchEngine()">
+                <div id="search-results"></div>
+            </div>
+            <p id="slogan">20 Questions. No Mistakes. Good Luck.</p>
+            <div class="mode-selection">
+                <p class="select-label">Select Your Mission:</p>
+                <button class="menu-btn" onclick="startGame('domestic')">Indian Airports</button>
+                <button class="menu-btn btn-green" onclick="startGame('intl')">🌍 International Airports</button>
+                <button class="menu-btn btn-purple" onclick="startGame('airlines')">✈️ Airline Codes</button>
+            </div>
+        </div>
+
+        <div id="game" class="screen">
+            <div class="stats-bar">
+                <div class="stat-item"><b>Q</b> <span id="tq">0</span>/20</div>
+                <div class="stat-item"><b>✔</b> <span id="correct">0</span></div>
+                <div class="stat-item"><b>PTS</b> <span id="score">0</span></div>
+            </div>
+            <div id="timer-container"><div id="timer-bar"></div></div>
+            <div class="quiz-container">
+                <p id="mode-label"></p>
+                <h2 id="question-text">Loading...</h2>
+                <div id="choices" class="options-grid"></div>
+                <p id="msg"></p>
+                <button class="back-btn" onclick="location.reload()">Exit to MainPage</button>
+            </div>
+        </div>
+
+        <div id="results" class="screen">
+            <div class="results-card">
+                <div class="results-header">MISSION COMPLETE</div>
+                <div id="rank-display" class="rank-badge"></div>
+                <div id="final-stats" class="final-stats-grid"></div>
+                <button class="menu-btn restart-btn" onclick="location.reload()">New Flight Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="snd-correct" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
+    <audio id="snd-wrong" src="https://assets.mixkit.co/active_storage/sfx/2003/2003-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

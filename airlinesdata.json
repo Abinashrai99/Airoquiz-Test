@@ -1,0 +1,524 @@
+[
+  {
+    "airline_name": "Emirates",
+    "stock_code": "176",
+    "iata_code": "EK",
+    "main_hub": "Dubai INTL Airport - DXB"
+  },
+  {
+    "airline_name": "Japan Airlines",
+    "stock_code": "131",
+    "iata_code": "JL",
+    "main_hub": "Tokyo Haneda Airport - HND"
+  },
+  {
+    "airline_name": "Singapore Airlines",
+    "stock_code": "618",
+    "iata_code": "SQ",
+    "main_hub": "Singapore Changi Airport - SIN"
+  },
+  {
+    "airline_name": "Lufthansa",
+    "stock_code": "220",
+    "iata_code": "LH",
+    "main_hub": "Frankfurt Airport - FRA"
+  },
+  {
+    "airline_name": "ROYAL AIR MAROC",
+    "stock_code": "147",
+    "iata_code": "AT",
+    "main_hub": "Casablanca Mohammed V Intl - CMN"
+  },
+  {
+    "airline_name": "British Airways",
+    "stock_code": "125",
+    "iata_code": "BA",
+    "main_hub": "London Heathrow Airport - LHR"
+  },
+  {
+    "airline_name": "Qatar Airways",
+    "stock_code": "157",
+    "iata_code": "QR",
+    "main_hub": "Hamad INTL Airport - DOH"
+  },
+  {
+    "airline_name": "Cathay Pacific",
+    "stock_code": "160",
+    "iata_code": "CX",
+    "main_hub": "Hong Kong INTL Airport - HKG"
+  },
+  {
+    "airline_name": "Korean Air",
+    "stock_code": "180",
+    "iata_code": "KE",
+    "main_hub": "Seoul Incheon INTL Airport - ICN"
+  },
+  {
+    "airline_name": "All Nippon Airways (ANA)",
+    "stock_code": "205",
+    "iata_code": "NH",
+    "main_hub": "Tokyo Haneda Airport - HND"
+  },
+  {
+    "airline_name": "EVA Air",
+    "stock_code": "695",
+    "iata_code": "BR",
+    "main_hub": "Taiwan Taoyuan INTL Airport - TPE"
+  },
+  {
+    "airline_name": "Finnair",
+    "stock_code": "105",
+    "iata_code": "AY",
+    "main_hub": "Helsinki Airport - HEL"
+  },
+  {
+    "airline_name": "Thai Airways",
+    "stock_code": "217",
+    "iata_code": "TG",
+    "main_hub": "Bangkok Suvarnabhumi Airport - BKK"
+  },
+  {
+    "airline_name": "Vietnam Airlines",
+    "stock_code": "738",
+    "iata_code": "VN",
+    "main_hub": "Noi Bai INTL Airport - HAN"
+  },
+  {
+    "airline_name": "Malaysia Airlines",
+    "stock_code": "232",
+    "iata_code": "MH",
+    "main_hub": "Kuala Lumpur INTL Airport - KUL"
+  },
+  {
+    "airline_name": "Oman Air",
+    "stock_code": "910",
+    "iata_code": "WY",
+    "main_hub": "Muscat INTL Airport - MCT"
+  },
+  {
+    "airline_name": "Turkish Airlines",
+    "stock_code": "235",
+    "iata_code": "TK",
+    "main_hub": "Istanbul Airport - IST"
+  },
+  {
+    "airline_name": "Etihad Airways",
+    "stock_code": "607",
+    "iata_code": "EY",
+    "main_hub": "Abu Dhabi INTL Airport - AUH"
+  },
+  {
+    "airline_name": "Asiana Airlines",
+    "stock_code": "988",
+    "iata_code": "OZ",
+    "main_hub": "Seoul Incheon INTL Airport - ICN"
+  },
+  {
+    "airline_name": "Air Cambodia",
+    "stock_code": "188",
+    "iata_code": "K6",
+    "main_hub": "Phnom Penh Intl Airport - PNH"
+  },
+  {
+    "airline_name": "ITA Airways",
+    "stock_code": "055",
+    "iata_code": "AZ",
+    "main_hub": "Rome Fiumicino Airport - FCO"
+  },
+  {
+    "airline_name": "AIR ARABIA",
+    "stock_code": "514",
+    "iata_code": "G9",
+    "main_hub": "Sharjah Intl Airport - SHJ"
+  },
+  {
+    "airline_name": "AIR ASIA",
+    "stock_code": "807",
+    "iata_code": "AK",
+    "main_hub": "Kuala Lumpur Intl Airport - KUL"
+  },
+  {
+    "airline_name": "AIR ASTANA",
+    "stock_code": "465",
+    "iata_code": "KC",
+    "main_hub": "Almaty Intl Airport - ALA"
+  },
+  {
+    "airline_name": "WESTJET",
+    "stock_code": "838",
+    "iata_code": "WS",
+    "main_hub": " Calgary, Alberta, Canada - YYC"
+  },
+  {
+    "airline_name": "AIR CHINA",
+    "stock_code": "999",
+    "iata_code": "CA",
+    "main_hub": "Beijing Capital Intl Airport - PEK"
+  },
+  {
+    "airline_name": "AIR CANADA",
+    "stock_code": "014",
+    "iata_code": "AC",
+    "main_hub": "Toronto Pearson Intl Airport - YYZ"
+  },
+  {
+    "airline_name": "AIR MAURITUS",
+    "stock_code": "239",
+    "iata_code": "MK",
+    "main_hub": "Sir Seewoosagur Ramgoolam Intl - MRU"
+  },
+  {
+    "airline_name": "AIR SEYCHELLES",
+    "stock_code": "061",
+    "iata_code": "HM",
+    "main_hub": "Seychelles Intl Airport - SEZ"
+  },
+  {
+    "airline_name": "AIR TANZANIA",
+    "stock_code": "197",
+    "iata_code": "TC",
+    "main_hub": "Julius Nyerere Intl Airport - DAR"
+  },
+  {
+    "airline_name": "UNITED AIRLINE",
+    "stock_code": "016",
+    "iata_code": "UA",
+    "main_hub": "Chicago O'Hare Intl Airport - ORD"
+  },
+  {
+    "airline_name": "AMERICAN",
+    "stock_code": "001",
+    "iata_code": "AA",
+    "main_hub": "Dallas/Fort Worth Intl Airport - DFW"
+  },
+  {
+    "airline_name": "APG AIRLINE",
+    "stock_code": "457",
+    "iata_code": "GP",
+    "main_hub": "Toulouse Blagnac Airport (TLS), France"
+  },
+  {
+    "airline_name": "AVIANCA AIRLINES",
+    "stock_code": "134",
+    "iata_code": "AV",
+    "main_hub": "El Dorado Intl Airport - BOG"
+  },
+  {
+    "airline_name": "AZERBAIJAN AIRLINES",
+    "stock_code": "771",
+    "iata_code": "J2",
+    "main_hub": "Heydar Aliyev Intl Airport - GYD"
+  },
+  {
+    "airline_name": "BATIK AIR",
+    "stock_code": "938",
+    "iata_code": "ID",
+    "main_hub": "Hatta International Airport (CGK), Indonesia"
+  },
+  {
+    "airline_name": "BHUTAN (Drukair)",
+    "stock_code": "786",
+    "iata_code": "B3",
+    "main_hub": "Paro Intl Airport - PBH"
+  },
+  {
+    "airline_name": "BIMAN BANGLADESH",
+    "stock_code": "997",
+    "iata_code": "BG",
+    "main_hub": "Hazrat Shahjalal Intl Airport - DAC"
+  },
+  {
+    "airline_name": "AIR FRANCE",
+    "stock_code": "057",
+    "iata_code": "AF",
+    "main_hub": "Paris Charles de Gaulle Airport - CDG"
+  },
+  {
+    "airline_name": "CHINA SOUTHERN AIRLINES",
+    "stock_code": "784",
+    "iata_code": "CZ",
+    "main_hub": "Guangzhou Baiyun Intl Airport - CAN"
+  },
+  {
+    "airline_name": "DELTA AIRLINE",
+    "stock_code": "006",
+    "iata_code": "DL",
+    "main_hub": "Atlanta International Airport (ATL)"
+  },
+  {
+    "airline_name": "EGYPTAIR",
+    "stock_code": "077",
+    "iata_code": "MS",
+    "main_hub": "Cairo Intl Airport - CAI"
+  },
+  {
+    "airline_name": "ETHIOPIAN AIRLINES",
+    "stock_code": "071",
+    "iata_code": "ET",
+    "main_hub": "Addis Ababa Bole Intl Airport - ADD"
+  },
+  {
+    "airline_name": "FIJI AIRWAYS",
+    "stock_code": "260",
+    "iata_code": "FJ",
+    "main_hub": "Nadi Intl Airport - NAN"
+  },
+  {
+    "airline_name": "FLEXFLIGHT",
+    "stock_code": "365",
+    "iata_code": "W2",
+    "main_hub": "Copenhagen Airport - CPH"
+  },
+  {
+    "airline_name": "SAUDI ARABIAN",
+    "stock_code": "065",
+    "iata_code": "SV",
+    "main_hub": "King Abdulaziz Intl Airport - JED"
+  },
+  {
+    "airline_name": "FLY DUBAI",
+    "stock_code": "141",
+    "iata_code": "FZ",
+    "main_hub": "Dubai Intl Airport - DXB"
+  },
+  {
+    "airline_name": "FLYNAS AIR",
+    "stock_code": "593",
+    "iata_code": "XY",
+    "main_hub": "King Khalid Intl Airport - RUH"
+  },
+  {
+    "airline_name": "GULF AIRLINE",
+    "stock_code": "072",
+    "iata_code": "GF",
+    "main_hub": "Bahrain Intl Airport - BAH"
+  },
+  {
+    "airline_name": "HAHN AIR",
+    "stock_code": "169",
+    "iata_code": "HR",
+    "main_hub": "Dusseldorf Airport - DUS"
+  },
+  {
+    "airline_name": "Philippine Airlines",
+    "stock_code": "079",
+    "iata_code": "PR",
+    "main_hub": "Ninoy Aquino INTL Airport - MNL"
+  },
+  {
+    "airline_name": "JAZEERA AIRWAYS",
+    "stock_code": "486",
+    "iata_code": "J9",
+    "main_hub": "Kuwait Intl Airport - KWI"
+  },
+  {
+    "airline_name": "JET STAR",
+    "stock_code": "041",
+    "iata_code": "JQ",
+    "main_hub": "Melbourne Airport - MEL"
+  },
+  {
+    "airline_name": "KENYA AIRLINE",
+    "stock_code": "706",
+    "iata_code": "KQ",
+    "main_hub": "Jomo Kenyatta Intl Airport - NBO"
+  },
+  {
+    "airline_name": "KUWAIT AIRWAYS",
+    "stock_code": "229",
+    "iata_code": "KU",
+    "main_hub": "Kuwait Intl Airport - KWI"
+  },
+  {
+    "airline_name": "LATAM AIRLINES BRASIL",
+    "stock_code": "957",
+    "iata_code": "JJ",
+    "main_hub": "S\u00e3o Paulo/Guarulhos International Airport - GRU"
+  },
+  {
+    "airline_name": "LOT Polish Airlines",
+    "stock_code": "080",
+    "iata_code": "LO",
+    "main_hub": "Warsaw Chopin Airport - WAW"
+  },
+  {
+    "airline_name": "BATIK AIR MALAYSIA",
+    "stock_code": "816",
+    "iata_code": "OD",
+    "main_hub": "Kuala Lumpur Intl Airport - KUL"
+  },
+  {
+    "airline_name": "MYANMAR AIRWAYS INTL",
+    "stock_code": "599",
+    "iata_code": "8M",
+    "main_hub": "Yangon Intl Airport - RGN"
+  },
+  {
+    "airline_name": "NEOS S.P.A",
+    "stock_code": "703",
+    "iata_code": "NO",
+    "main_hub": "Milan Malpensa Airport - MXP"
+  },
+  {
+    "airline_name": "NEW ZEALAND LIMITED",
+    "stock_code": "086",
+    "iata_code": "NZ",
+    "main_hub": "Auckland Airport - AKL"
+  },
+  {
+    "airline_name": "QANTAS",
+    "stock_code": "081",
+    "iata_code": "QF",
+    "main_hub": "Sydney Kingsford Smith Airport - SYD"
+  },
+  {
+    "airline_name": "ROYAL JORDANIAN",
+    "stock_code": "512",
+    "iata_code": "RJ",
+    "main_hub": "Queen Alia Intl Airport - AMM"
+  },
+  {
+    "airline_name": "ROYAL NEPAL",
+    "stock_code": "285",
+    "iata_code": "RA",
+    "main_hub": "Tribhuvan Intl Airport - KTM"
+  },
+  {
+    "airline_name": "RWANDAIR",
+    "stock_code": "459",
+    "iata_code": "WB",
+    "main_hub": "Kigali Intl Airport - KGL"
+  },
+  {
+    "airline_name": "SALAM AIR",
+    "stock_code": "960",
+    "iata_code": "OV",
+    "main_hub": "Muscat Intl Airport - MCT"
+  },
+  {
+    "airline_name": "AIR INDIA",
+    "stock_code": "098",
+    "iata_code": "AI",
+    "main_hub": "Indira Gandhi Intl Airport - DEL"
+  },
+  {
+    "airline_name": "SCANDINAVIAN (SAS)",
+    "stock_code": "117",
+    "iata_code": "SK",
+    "main_hub": "Copenhagen Airport - CPH"
+  },
+  {
+    "airline_name": "SCOOT AIRLINE",
+    "stock_code": "668",
+    "iata_code": "TR",
+    "main_hub": "Singapore Changi Airport - SIN"
+  },
+  {
+    "airline_name": "SOUTH AFRICAN AIR",
+    "stock_code": "083",
+    "iata_code": "SA",
+    "main_hub": "O. R. Tambo Intl Airport - JNB"
+  },
+  {
+    "airline_name": "IndiGo",
+    "stock_code": "LCC",
+    "iata_code": "6E",
+    "main_hub": "Indira Gandhi INTL Airport - DEL"
+  },
+  {
+    "airline_name": "SRILANKAN",
+    "stock_code": "603",
+    "iata_code": "UL",
+    "main_hub": "Bandaranaike Intl Airport - CMB"
+  },
+  {
+    "airline_name": "AKASA",
+    "stock_code": "LCC",
+    "iata_code": "QP",
+    "main_hub": "Chhatrapati Shivaji Maharaj Intl - BOM"
+  },
+  {
+    "airline_name": "ALLIANCE AIR",
+    "stock_code": "LCC",
+    "iata_code": "9I",
+    "main_hub": "Indira Gandhi Intl Airport - DEL"
+  },
+  {
+    "airline_name": "THAI LION",
+    "stock_code": "310",
+    "iata_code": "SL",
+    "main_hub": "Don Mueang Intl Airport - DMK"
+  },
+  {
+    "airline_name": "THAI SMILE AIRWAYS",
+    "stock_code": "909",
+    "iata_code": "WE",
+    "main_hub": "Suvarnabhumi Airport - BKK"
+  },
+  {
+    "airline_name": "FLY BIG",
+    "stock_code": "LCC",
+    "iata_code": "S9",
+    "main_hub": "Indira Gandhi Intl Airport - DEL"
+  },
+  {
+    "airline_name": "TURKMENISTAN AIRLINES",
+    "stock_code": "542",
+    "iata_code": "T5",
+    "main_hub": "Ashgabat Intl Airport - ASB"
+  },
+  {
+    "airline_name": "SPICEJET",
+    "stock_code": "LCC",
+    "iata_code": "SG",
+    "main_hub": "Indira Gandhi Intl Airport - DEL"
+  },
+  {
+    "airline_name": "US BANGLA",
+    "stock_code": "779",
+    "iata_code": "BS",
+    "main_hub": "Hazrat Shahjalal Intl Airport - DAC"
+  },
+  {
+    "airline_name": "UZBEKISTAN AIRWAYS",
+    "stock_code": "250",
+    "iata_code": "HY",
+    "main_hub": "Tashkent Intl Airport - TAS"
+  },
+  {
+    "airline_name": "VIETJET AIR",
+    "stock_code": "978",
+    "iata_code": "VJ",
+    "main_hub": "Tan Son Nhat Intl Airport - SGN"
+  },
+  {
+    "airline_name": "VIRGIN ATLANTIC",
+    "stock_code": "932",
+    "iata_code": "VS",
+    "main_hub": "London Heathrow Airport - LHR"
+  },
+  {
+    "airline_name": "STAR AIR",
+    "stock_code": "LCC",
+    "iata_code": "S5",
+    "main_hub": "Kempegowda Intl Airport - BLR"
+  },
+  {
+    "airline_name": "XIAMEN AIRLINES",
+    "stock_code": "731",
+    "iata_code": "MF",
+    "main_hub": "Xiamen Gaoqi Intl Airport - XMN"
+  },
+  {
+    "airline_name": "Fly91",
+    "stock_code": "LCC",
+    "iata_code": "IC",
+    "main_hub": "Mopa, Goa- GOX"
+  },
+  {
+    "airline_name": "Air India Express",
+    "stock_code": "LCC",
+    "iata_code": "IX",
+    "main_hub": "Gurugram"
+  }
+]
