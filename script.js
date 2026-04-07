@@ -1,9 +1,8 @@
 // Global Variables
-let airportData = { domestic: [], intl: [] }; 
+let allAirports = []; 
 let airlineData = [];
 let gameQueue = [];
 let currentQuestions = [];
-let currentMode = 'domestic';
 let stats = { tq: 0, c: 0, w: 0, p: 0 };
 let currentQuestion = {};
 let timerInterval;
@@ -17,11 +16,11 @@ async function loadAllData() {
             fetch('airportsdata.json'),
             fetch('airlinesdata.json')
         ]);
-        airportData = await resAirports.json();
+        allAirports = await resAirports.json();
         airlineData = await resAirlines.json();
-        console.log("Mission data synchronized!");
+        console.log("Data loaded! Airports count:", allAirports.length);
     } catch (error) {
-        console.error("Flight deck error: Could not load data files.", error);
+        console.error("Flight deck error:", error);
     }
 }
 loadAllData();
@@ -40,24 +39,35 @@ function searchEngine() {
     let res = document.getElementById('search-results');
     if (input.length < 2) { res.innerHTML = ""; return; }
 
-    const all = [...airportData.domestic, ...airportData.intl, ...airlineData];
-    let match = all.find(a => a.c === input) || all.find(a => a.n.toUpperCase().includes(input));
+    const all = [...allAirports, ...airlineData];
+    // This looks for 'iata' in airports OR 'iata_code' in airlines
+    let match = all.find(a => (a.iata === input || a.iata_code === input)) || 
+                all.find(a => (a.airport_name?.toUpperCase().includes(input) || a.airline_name?.toUpperCase().includes(input)));
 
     if (match) { 
+        let code = match.iata || match.iata_code;
+        let name = match.airport_name || match.airline_name;
         res.innerHTML = `<div style="color:#2c3e50; padding:12px; background:#e1f5fe; border-radius:8px; border-left: 5px solid #3498db; text-align: left;">
             <small style="color:#3498db; font-weight:bold; display:block; font-size: 0.7em;">IDENTIFIED</small>
-            <b>${match.c}</b> — ${match.n}</div>`; 
+            <b>${code}</b> — ${name}</div>`; 
     } else { 
         res.innerHTML = "<div style='color:#e74c3c; padding:8px; font-size:0.85em;'>❌ No match found</div>"; 
     }
 }
 
 function startGame(mode) {
-    currentMode = mode;
-    currentQuestions = (mode === 'airlines') ? airlineData : airportData[mode];
+    if (mode === 'airlines') {
+        currentQuestions = airlineData.map(a => ({ c: a.iata_code, n: a.airline_name }));
+    } else if (mode === 'domestic') {
+        // Filters airports where country is India
+        currentQuestions = allAirports.filter(a => a.country === "India").map(a => ({ c: a.iata, n: a.airport_name }));
+    } else if (mode === 'intl') {
+        // Filters airports where country is NOT India
+        currentQuestions = allAirports.filter(a => a.country !== "India").map(a => ({ c: a.iata, n: a.airport_name }));
+    }
 
     if (!currentQuestions || currentQuestions.length === 0) {
-        alert("Systems still booting up! Please try again in a second.");
+        alert("Loading data... please try again in 2 seconds.");
         return;
     }
 
@@ -126,14 +136,14 @@ function checkAnswer(selected) {
 
     stats.tq++; 
     if(selected === currentQuestion.c) {
-        try { document.getElementById('snd-correct').play(); } catch(e){}
         document.getElementById('msg').innerHTML = "<span style='color:green'>Correct! ✅</span>";
         stats.c++; stats.p += 10;
+        try { document.getElementById('snd-correct').play(); } catch(e){}
     } else {
-        try { document.getElementById('snd-wrong').play(); } catch(e){}
         let revealMsg = selected === null ? "Time Out!" : "Wrong!";
         document.getElementById('msg').innerHTML = `<span style='color:red; font-size: 0.9em;'>${revealMsg} It was ${currentQuestion.c}</span>`;
         stats.w++;
+        try { document.getElementById('snd-wrong').play(); } catch(e){}
     }
     updateUI();
     setTimeout(nextQuestion, 2000); 
@@ -143,7 +153,12 @@ function showResults() {
     document.getElementById('game').classList.remove('active');
     document.getElementById('results').classList.add('active');
     const accuracy = Math.round((stats.c / stats.tq) * 100) || 0;
-    let rank = accuracy === 100 ? "🏆 SENIOR CAPTAIN" : accuracy >= 80 ? "👨‍✈️ CAPTAIN" : "🛩️ CADET";
+    
+    let rank = "👨‍🔧 GROUND CREW";
+    if (accuracy === 100) rank = "🏆 SENIOR CAPTAIN";
+    else if (accuracy >= 80) rank = "👨‍✈️ CAPTAIN";
+    else if (accuracy >= 50) rank = "✈️ FIRST OFFICER";
+
     document.getElementById('rank-display').innerText = rank;
     document.getElementById('final-stats').innerHTML = `
         <div class="stat-card"><small>Score</small><b>${stats.p}</b></div>
